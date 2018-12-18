@@ -4,6 +4,10 @@ Run Rspec from the root directory
 
 Google the exact error message you are getting right away if you have never seen it before
 
+Use expect inside an "it" (individual) block
+
+
+
 
 What I learned NOT to do:
 
@@ -14,3 +18,5 @@ Run Rspec from not the root directory
 Make wonky file structures
 
 100% trust every single tutorial found online
+
+Use expect inside a describe block
