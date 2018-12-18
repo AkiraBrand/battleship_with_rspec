@@ -28,4 +28,15 @@ describe Ship do
       expect(cruiser.sunk?).to be false
     end
   end
+
+  describe ".hit" do
+    it "takes away a health point" do
+      cruiser = Ship.new("Cruiser", 3)
+      cruiser.hit
+      expect(cruiser.health).to eq(2)
+      cruiser.hit
+      cruiser.hit
+      expect(cruiser.sunk?).to be true
+    end
+  end
 end
