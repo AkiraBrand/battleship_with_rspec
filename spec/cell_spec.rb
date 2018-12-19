@@ -26,6 +26,7 @@ describe Cell do
     cell.place_ship(cruiser)
     cell.fire_upon
     expect(cell.fired_upon?).to be true
+    expect(cell.ship.health).to eq(3)
   end
 
 end
