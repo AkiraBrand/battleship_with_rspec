@@ -30,7 +30,7 @@ describe Ship do
   end
 
   describe ".hit" do
-    it "takes away a health point" do
+    it "takes away a health point for each hit" do
       cruiser = Ship.new("Cruiser", 3)
       cruiser.hit
       expect(cruiser.health).to eq(2)
